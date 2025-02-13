@@ -1,0 +1,21 @@
+##grflangid 0x01
+##plural 0
+
+STR_GRF_NAME        :Stupid {PUSH_COLOUR}{YELLOW}Test{POP_COLOUR}GRF
+STR_GRF_DESC        :Test this crap.{}But really.
+STR_GRF_URL         :https://example.com
+
+STR_PARAM_NAME      :This is a parameter
+STR_PARAM_DESC      :You can set it.
+STR_PARAM_0         :Value 0
+STR_PARAM_1         :Value 1
+STR_PARAM_2         :Value 2
+
+STR_TRAIN_NAME      :Weird train
+STR_TRAIN_DESC      :Force: {FORCE}, Speed: {VELOCITY}, Date: {DATE_LONG}, More info: {STRING}, Cargo: {CARGO_LONG}
+
+STR_STATION_CLASS   :Weird stuff
+STR_STATION_NAME    :Weird station
+
+STR_ERROR_MAGIC     :{PUSH_COLOUR}{YELLOW}MAGIC{POP_COLOUR}
+STR_ERROR_CUSTOM    :{STRING}: Errors are {STRING}, {COMMA} times per day

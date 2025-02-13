@@ -1,0 +1,22 @@
+##grflangid 0x02
+##plural 0
+##gender m f n
+
+STR_GRF_NAME        :Dummes {PUSH_COLOUR}{YELLOW}Test{POP_COLOUR}GRF
+STR_GRF_DESC        :So ein Mist.{}Wirklich.
+STR_GRF_URL         :https://example.com/de
+
+STR_PARAM_NAME      :Ein Parameter
+STR_PARAM_DESC      :Editierbar
+STR_PARAM_0         :Wert 0
+STR_PARAM_1         :Wert 1
+STR_PARAM_2         :Wert 2
+
+STR_TRAIN_NAME      :Seltsamer Zug
+STR_TRAIN_DESC      :Kraft: {FORCE}, Geschwindigkeit: {VELOCITY}, Weiteres: {3:STRING}, Güter: {4:CARGO_LONG}, Datum: {2:DATE_LONG}
+
+STR_STATION_CLASS   :Seltsames Zeug
+STR_STATION_NAME    :Seltsamer Bahnhof
+
+STR_ERROR_MAGIC     :{G=f}{PUSH_COLOUR}{YELLOW}MAGIE{POP_COLOUR}
+STR_ERROR_CUSTOM    :{STRING}: Fehler sind {G der die das} {STRING}, {COMMA} mal am Tag
