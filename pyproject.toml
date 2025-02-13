@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "grf2txt"
+description = "Extract language files from NewGRF"
+requires-python = ">= 3.11"
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "black",
+    "pytest",
+    "mypy",
+]
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
