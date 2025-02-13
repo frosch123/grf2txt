@@ -1,8 +1,9 @@
-.PHONY: all test flake black mypy pytest venv
+.PHONY: all test flake black mypy pytest venv testdata
 
 PYTHON=python3
 VPYTHON=.venv/bin/python3
-SRC=grf2txt
+NMLC=.venv/bin/nmlc
+SRC=grf2txt tests
 
 all: test
 
@@ -26,3 +27,8 @@ venv: .venv/pyvenv.cfg
 	$(PYTHON) -m venv .venv
 	$(VPYTHON) -m pip install .[dev]
 	$(VPYTHON) -m mypy --install-types --non-interactive
+
+testdata: tests/test_data/test.grf
+
+%.grf: %.nml
+	$(NMLC) --grf $@ -l $(<D)/lang $<

@@ -1,0 +1,42 @@
+grf {
+    grfid: "TEST";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    url: string(STR_GRF_URL);
+    version: 1;
+    min_compatible_version: 1;
+	param {
+		param_foo {
+			type: int;
+			name: string(STR_PARAM_NAME);
+			desc: string(STR_PARAM_DESC);
+			min_value: 0;
+			max_value: 2;
+			names: {
+				0: string(STR_PARAM_0);
+				1: string(STR_PARAM_1);
+				2: string(STR_PARAM_2);
+			};
+		}
+	}
+}
+
+item (FEAT_TRAINS, item_train, 0x100) {
+    property {
+        name: string(STR_TRAIN_NAME);
+    }
+    graphics {
+        additional_text: string(STR_TRAIN_DESC);
+    }
+}
+
+item (FEAT_STATIONS, item_station, 0) {
+    property {
+        class: "TEST";
+        classname: string(STR_STATION_CLASS);
+        name: string(STR_STATION_NAME);
+    }
+}
+
+error(NOTICE, USED_WITH, string(STR_ERROR_MAGIC));
+error(NOTICE, string(STR_ERROR_CUSTOM), string(STR_ERROR_MAGIC));

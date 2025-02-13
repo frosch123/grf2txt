@@ -18,6 +18,7 @@ dev = [
     "black",
     "pytest",
     "mypy",
+    "nml",
 ]
 
 [tool.black]
