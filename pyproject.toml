@@ -12,6 +12,8 @@ requires-python = ">= 3.11"
 dependencies = [
     "requests",
     "dacite",
+    "click",
+    "platformdirs",
 ]
 
 [project.optional-dependencies]
