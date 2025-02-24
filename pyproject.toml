@@ -10,6 +10,8 @@ name = "grf2txt"
 description = "Extract language files from NewGRF"
 requires-python = ">= 3.11"
 dependencies = [
+    "requests",
+    "dacite",
 ]
 
 [project.optional-dependencies]
